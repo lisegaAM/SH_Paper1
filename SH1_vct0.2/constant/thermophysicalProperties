@@ -1,0 +1,43 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      thermophysicalProperties;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+thermoType
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+mixture
+{
+    specie
+    {
+        nMoles          1;
+        molWeight       18.02;
+    }
+    thermodynamics
+    {
+        Cp              2762.09;
+        Hf              1.73e6;
+    }
+    transport
+    {
+        mu              3.2773e-5;
+        Pr              2.263;
+    }
+    equationOfState
+    {
+    }
+}

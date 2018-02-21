@@ -1,0 +1,30 @@
+
+FoamFile
+{
+    version     3.0;
+    format      ascii;
+    class       volScalarField;
+    object      magU;
+}
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform     42.7;
+
+boundaryField
+{
+    inlet
+    {
+        type        fixedValue;
+        value       uniform 42.7;
+    }
+    backWall
+    {
+        type        calculated;
+        value       uniform 0;
+    }
+    sides
+    {
+        type        empty;
+    }
+}

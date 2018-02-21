@@ -1,0 +1,113 @@
+
+FoamFile
+{
+    version     3.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      setFieldsDict;
+}
+
+
+
+defaultFieldValues
+(
+    volVectorFieldValue U (0 0 0)
+    volScalarFieldValue T 773
+    volScalarFieldValue p 1.8e7
+);
+
+regions
+(
+    boxToCell
+    { 
+        box (0 -0.2 0) (49.4 0.2 0.2);
+        fieldValues
+        (
+            volVectorFieldValue U (57.9 0 0)
+            volScalarFieldValue T 773
+            volScalarFieldValue p 1.8e7
+        );
+    }
+    boxToCell
+    {
+        box (49.4 -0.2 0) (50.2 0.6 0.2);
+        fieldValues
+        (
+            volVectorFieldValue U (40.94148 40.94148 0)
+            volScalarFieldValue T 773
+            volScalarFieldValue p 1.8e7
+        );
+    }
+    boxToCell
+    {
+        box (49.8 0.6 0) (50.2 39.4 0.2);
+        fieldValues
+        (
+            volVectorFieldValue U (0 57.9 0)
+            volScalarFieldValue T 773
+            volScalarFieldValue p 1.8e7
+        );
+    }
+    boxToCell
+    {
+        box (49.8 39.4 0) (50.6 40.2 0.2);
+        fieldValues
+        (
+            volVectorFieldValue U (40.94148 40.94148 0)
+            volScalarFieldValue T 773
+            volScalarFieldValue p 1.8e7
+        );
+    }
+    boxToCell
+    {
+        box (50.6 39.8 0) (69.4 40.2 0.2);
+        fieldValues
+        (
+            volVectorFieldValue U (57.9 0 0)
+            volScalarFieldValue T 773
+            volScalarFieldValue p 1.8e7
+        );
+    }
+    boxToCell
+    {
+        box (69.4 39.4 0) (70.2 40.2 0.2);
+        fieldValues
+        (
+            volVectorFieldValue U (40.94148 -40.94148 0)
+            volScalarFieldValue T 773
+            volScalarFieldValue p 1.8e7
+        );
+    }
+    boxToCell
+    {
+        box (69.8 0.6 0) (70.2 39.4 0.2);
+        fieldValues
+        (
+            volVectorFieldValue U (0 -57.9 0)
+            volScalarFieldValue T 773
+            volScalarFieldValue p 1.8e7
+        );
+    }
+    boxToCell
+    {
+        box (69.8 -0.2 0) (70.6 0.6 0.2);
+        fieldValues
+        (
+            volVectorFieldValue U (40.94148 -40.94148 0)
+            volScalarFieldValue T 773
+            volScalarFieldValue p 1.8e7
+        );
+    }
+    boxToCell
+    {
+        box (70.6 -0.2 0) (220 0.2 0.2);
+        fieldValues
+        (
+            volVectorFieldValue U (57.9 0 0)
+            volScalarFieldValue T 773
+            volScalarFieldValue p 1.8e7
+        );
+    }
+);
+
